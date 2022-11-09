@@ -5,12 +5,18 @@ const hbs=require("hbs");
 const port= process.env.PORT || 3000;
 
 const staticpath= path.join(__dirname, "../public");
+const templatepath= path.join(__dirname,"../template/views" );
+const partialspath= path.join(__dirname,"../template/partials");
 
-app.use(express.static(staticpath));
+hbs.registerPartials(partialspath);
+app.use(express.static(staticpath)); 
+
 app.set("view engine", "hbs");
+app.set("views", templatepath);
+
 
 app.get("/", (req, res)=>{
-    res.render("index");
+    res.render("index"); 
 })
 app.get("/about", (req, res)=>{
     res.render("about");

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,100;8..30,200;8..30,300;8..30,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+    font-size: large;
+    
+}
+.body{
+    background-color: azure;
+}
+h1{
+    color: #9F24AD;
+    background-color: aqua;
+    border: 2px solid red;
+}
+
+:root{
+    --main-bg : black;
+    --main-color: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.row{
+    margin: 0;
+}
+
+/* .main_menu{
+    background-color: var(--main-bg);
+} */
+
+.navbar .container-fluid a:hover{
+    color: lightskyblue;
+}
+
+.main_header_left{
+    padding-left: 10rem;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_header_left p{
+    font-weight: bold;
+    color: gray;
+}
+
+.main_header_left h2{
+    font-weight: 800;
+    color: #020906;
+}
+.main_header_left h2 span{
+    font-size: larger;
+    color: #9F24AD;
+}
+
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #04ff00cf;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0px 4px #888888;
+}
+
+.main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_right img{
+    height: 500px;
+}
+
+footer{
+    width: 100%;
+    background-color: gray;
+    margin-top: auto;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: rgb(8, 11, 0);
+    line-height: 300%;
+    font-size: small;
+}
+
+
+ /* Weather page css */
+
+ .box{
+    border: 2px solid rgb(24, 12, 12);
+    width: 100%;
+    height: 100vh;
+    display:inline-flex;
+    justify-content: center;
+    box-sizing: none;
+  /* align-items: center; */
+}
+.inputdata{
+    color: red;
+    position: absolute; 
+    top: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+    margin-top: 50px;
+   
+
+}
+.inputdata input{
+   
+    padding: 20px 140px;
+    font-size: 18px;
+    font-weight: bold;
+}
+ button{
+  background-color: rgb(87, 172, 246);
+  color: rgb(183, 28, 28); 
+  border: none;
+  color: rgb(26, 13, 13);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.8;
+
+}
+button:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.info{
+    /* height: 400px; */
+    margin: 0;
+    padding: 0;
+}
+
+
+.location{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 160px;
+    margin-bottom: -10px;
+}
+.location p{
+    font-size: 40px;
+}
+.condition{
+    /* border: 3px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #365858;
+}
+.tem{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: -3px;
+}
+.tem h2{
+    font-size: 28px;
+}
+.minmax{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: #2c2c2d;
+}
+.minmax p{
+    font-size: 20px;
+}
+.fontas i{
+    font-size: 40px;
+}
